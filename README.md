@@ -1,4 +1,4 @@
-                                                                      Hyrje
+  Hyrje
  
  Shifra e Playfair ose Sheshi Playfair ose shifra Wheatstone–Playfair është një teknikë manuale e enkriptimit simetrik dhe ishte shifra e parë e zëvendësimit të digramit.
  Teknika kodon çifte shkronjash (bigrame ose digrame), në vend të shkronjave të vetme si në kodin e thjeshtë të zëvendësimit dhe sistemet më komplekse të shifrimit Vigenère atëherë në përdorim. 
