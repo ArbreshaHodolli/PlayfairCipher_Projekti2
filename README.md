@@ -2,7 +2,6 @@ PlayfairCipher ne Java - Projekti II
 
  Hyrje
  
- Shifra e Playfair ose Sheshi Playfair ose shifra Wheatstone–Playfair është një teknikë manuale e enkriptimit simetrik dhe ishte shifra e parë e zëvendësimit të digramit.
- Teknika kodon çifte shkronjash (bigrame ose digrame), në vend të shkronjave të vetme si në kodin e thjeshtë të zëvendësimit dhe sistemet më komplekse të shifrimit Vigenère atëherë në përdorim. 
- Prandaj, Playfair është dukshëm më i vështirë për t'u thyer pasi analiza e frekuencës e përdorur për shifrat e thjeshta të zëvendësimit nuk funksionon me të.
- Analiza e frekuencës së bigrameve është e mundur, por dukshëm më e vështirë. Me 600 bigrame të mundshme në vend të 26 monogrameve të mundshme), kërkohet një tekst shifror dukshëm më i madh për të qenë i dobishëm.
+ Ky është një depo e bazuar në Java, e cila përfshin konceptin e Playfair Shipher të kriptografisë.
+
+Ky program do të na ndihmojë të kodojmë mesazhe me përmasa të mëdha në tekst shifror shumë të sigurt dhe të komplikuar dhe atë gjithashtu brenda pak sekondash, gjë që përndryshe do të kishte marrë një kohë shumë të gjatë nëse do ta bënte një njeri, duke na treguar kështu edhe fuqinë. të kompjuterëve.
