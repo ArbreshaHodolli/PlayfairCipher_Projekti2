@@ -28,4 +28,68 @@ public class Dekriptimi {
                 table[round][ctr % 5] = alpha[i];
             }
         }
+        System.out.println("\nThe Reference Table is:");
+        for(int i=0;i<5;i++)
+        {
+           for(int j=0;j<5;j++)
+           System.out.print(table[i][j]+" ");
+           System.out.println();
+        }
+        char[] any=new char[encpt_arr.length];
+        int any_ctr=0;
+        for(int i=0;i<encpt_arr.length;i=i+2)
+        {
+          int row1=0,row2=0,col1=0,col2=0;
+          for(int j=0;j<5;j++)
+         {
+          for(int k=0;k<5;k++)
+         {
+             if(encpt_arr[i]==table[j][k])
+         {
+             row1=j;
+             col1=k;
+             break;
+         }
+        }
+      }
+         for(int j=0;j<5;j++)
+         {
+         for(int k=0;k<5;k++)
+         {
+         if(encpt_arr[i+1]==table[j][k])
+         {
+            row2=j;
+            col2=k;
+            break;
+         }
+         }
+         }
+     if(row1==row2)
+     {
+     col1=(col1-1+5)%5;
+     col2=(col2-1+5)%5;
+     any[any_ctr++]=table[row1][col1];
+     any[any_ctr++]=table[row2][col2];
+     }
+      else if(col1==col2)
+     {
+        row1=(row1-1+5)%5;
+        row2=(row2-1+5)%5;
+        any[any_ctr++]=table[row1][col1];
+        any[any_ctr++]=table[row2][col2];
+     }
+     else if(row1!=row2 && col1!=col2)
+    {
+     int row=0,col=0;
+     row=row1;
+     col=col2;
+     any[any_ctr++]=table[row][col];
+     row=row2;
+     col=col1;
+     any[any_ctr++]=table[row][col];
+     }
+     else
+     {
+     }
+   }
         
