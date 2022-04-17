@@ -116,3 +116,23 @@ public class Dekriptimi {
                     any[i] == 'X') {
                 continue;
             }
+
+            if (i == 2 && any[i - 1] != any[i + 1] &&
+                    any[i] != 'X') {
+                decpt_arr[decpt_arr_ctr++] = any[i];
+                continue;
+            }
+            if (i != any_ctr - 2 && i != any_ctr - 1
+                    && any[i - 1] == any[i + 1] && any[i] == 'X') {
+                continue;
+            }
+            if (i != any_ctr - 2 && i != any_ctr - 1
+                    && any[i - 1] == any[i + 1] && any[i] != 'X') {
+
+                decpt_arr[decpt_arr_ctr++] = any[i];
+                continue;
+            }
+            if (i == any_ctr - 2 && any[i - 1] == any[i + 1]
+                    && any[i] == 'X') {
+                continue;
+            }
