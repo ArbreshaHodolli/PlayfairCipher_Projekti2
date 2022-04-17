@@ -30,6 +30,7 @@ if(alpha[i]!='0')
 ctr++;
 int round = ctr/5;
 table[round][ctr%5]=alpha[i];
+  
 }
 }
 char[] any=new char[100];
@@ -45,4 +46,115 @@ if(i==1 && pt_arr[i]!=pt_arr[i+1] && i+1<pt_arr.length)
 {
 any[c++]=pt_arr[i];
 continue;
+}
+  if(i==pt_arr.length-2 && i%2==0 && pt_arr[i]!=pt_arr[i-1]&& pt_arr[i]!=pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i==pt_arr.length-2 && i%2==0 && pt_arr[i]!=pt_arr[i-1]&& pt_arr[i]==pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i==pt_arr.length-2 && i%2==0 && pt_arr[i]==pt_arr[i-1]&& pt_arr[i]!=pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i==pt_arr.length-2 && i%2==0 && pt_arr[i]==pt_arr[i-1]&& pt_arr[i]==pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i==pt_arr.length-2 && i%2!=0 && pt_arr[i]!=pt_arr[i-1]&& pt_arr[i]!=pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i==pt_arr.length-2 && i%2!=0 && pt_arr[i]!=pt_arr[i-1]&& pt_arr[i]==pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i==pt_arr.length-2 && i%2!=0 && pt_arr[i]==pt_arr[i-1]&& pt_arr[i]!=pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i==pt_arr.length-2 && i%2!=0 && pt_arr[i]==pt_arr[i-1]&& pt_arr[i]==pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i==pt_arr.length-1 && i%2==0 && pt_arr[i]!=pt_arr[i-1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i==pt_arr.length-1 && i%2==0 && pt_arr[i]==pt_arr[i-1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i==pt_arr.length-1 && i%2!=0 && pt_arr[i]!=pt_arr[i-1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i==pt_arr.length-1 && i%2!=0 && pt_arr[i]==pt_arr[i-1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i%2==0 && pt_arr[i]!=pt_arr[i-1] && pt_arr[i]==pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i%2==0 && pt_arr[i]!=pt_arr[i-1] && pt_arr[i]!=pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i%2==0 && pt_arr[i]==pt_arr[i-1] && pt_arr[i]!=pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i%2==0 && pt_arr[i]==pt_arr[i-1] && pt_arr[i]==pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i%2!=0 && pt_arr[i]!=pt_arr[i-1] && pt_arr[i]==pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
+if(i%2!=0 && pt_arr[i]!=pt_arr[i-1] && pt_arr[i]!=pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i%2!=0 && pt_arr[i]==pt_arr[i-1] && pt_arr[i]!=pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+continue;
+}
+if(i%2!=0 && pt_arr[i]==pt_arr[i-1] && pt_arr[i]==pt_arr[i+1])
+{
+any[c++]=pt_arr[i];
+any[c++]='X';
+continue;
+}
 }
