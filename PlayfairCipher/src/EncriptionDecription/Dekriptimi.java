@@ -93,3 +93,26 @@ public class Dekriptimi {
      }
    }
         
+        System.out.print("\nThe Intermediate Text is: ");
+        for (int i = 0; i < any_ctr; i++)
+            System.out.print(any[i]);
+        char[] decpt_arr = new char[100];
+        int decpt_arr_ctr = 0;
+        for (int i = 0; i < any_ctr; i++) {
+            if (i == 0) {
+                decpt_arr[decpt_arr_ctr++] = any[i];
+                continue;
+            }
+            if (i == 1 && any[i - 1] == any[i + 1] &&
+                    any[i] == 'X') {
+                continue;
+            }
+            if (i == 1 && any[i - 1] != any[i + 1] &&
+                    any[i] != 'X') {
+                decpt_arr[decpt_arr_ctr++] = any[i];
+                continue;
+            }
+            if (i == 2 && any[i - 1] == any[i + 1] &&
+                    any[i] == 'X') {
+                continue;
+            }
