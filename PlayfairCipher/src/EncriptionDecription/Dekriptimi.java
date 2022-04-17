@@ -12,4 +12,20 @@ public class Dekriptimi {
                 , 'Y', 'Z'};
         char[][] table = new char[5][5];
         int ctr = -1;
+        for (int i = 0; i < key_arr.length; i++)
+            for (int j = 0; j < 25; j++)
+                if (key_arr[i] == alpha[j]) {
+                    ctr++;
+                    int round = ctr / 5;
+                    table[round][ctr % 5] = alpha[j];
+                    alpha[j] = '0';
+                    break;
+                }
+        for (int i = 0; i < alpha.length; i++) {
+            if (alpha[i] != '0') {
+                ctr++;
+                int round = ctr / 5;
+                table[round][ctr % 5] = alpha[i];
+            }
+        }
         
