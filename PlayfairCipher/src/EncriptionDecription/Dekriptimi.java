@@ -165,3 +165,16 @@ public class Dekriptimi {
             System.out.print(decpt_arr[i]);
         
     }
+    
+    
+       public static void main(String[] args) {
+       String encpt;
+       System.out.print("Enter Ciphertext: ");
+       Scanner scanner = new Scanner(System.in);
+       encpt = scanner.nextLine();
+       String key;
+       System.out.print("Enter Key: ");
+       key = scanner.nextLine();
+       decrypt(encpt,key);
+      }
+}
