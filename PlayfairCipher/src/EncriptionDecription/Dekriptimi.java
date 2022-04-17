@@ -136,3 +136,32 @@ public class Dekriptimi {
                     && any[i] == 'X') {
                 continue;
             }
+            
+            if (i == any_ctr - 2 && any[i - 1] == any[i + 1]
+                    && any[i] != 'X') {
+                decpt_arr[decpt_arr_ctr++] = any[i];
+                continue;
+            }
+            if (i == any_ctr - 1 && i % 2 != 0 &&
+                    any[i] == 'X') {
+                continue;
+            }
+            if (i == any_ctr - 1 && any[i] != 'X') {
+                decpt_arr[decpt_arr_ctr++] = any[i];
+                continue;
+            }
+            if (i == any_ctr - 1 && i % 2 == 0 &&
+                    any[i] == 'X') {
+                continue;
+            }
+            if (i >= 0) {
+                decpt_arr[decpt_arr_ctr++] = any[i];
+                continue;
+                
+            }
+        }
+        System.out.print("\n\nThe Decrypted Text PQPULTCBCQLICVIPPLIBHUMYis: ");
+        for (int i = 0; i < decpt_arr_ctr; i++)
+            System.out.print(decpt_arr[i]);
+        
+    }
